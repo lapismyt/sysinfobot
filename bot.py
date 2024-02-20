@@ -3,6 +3,7 @@ import telebot
 import os
 
 API_TOKEN = os.environ.get("SYSINFOBOT_KEY")
+print(f"API Key: {API_TOKEN}")
 bot = telebot.TeleBot(API_TOKEN)
 
 @bot.message_handler(commands=['info'])
